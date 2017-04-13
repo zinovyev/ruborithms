@@ -8,14 +8,15 @@ require 'ruborithms/version'
 Gem::Specification.new do |s|
   s.name        = 'ruborithms'
   s.version     = Ruborithms::VERSION
-  s.summary     = "Algorithms and data structures built with Ruby"
-  s.description = "Algorithms and data structures built with Ruby"
-  s.authors     = ["Ivan Zinovyev"]
+  s.summary     = 'Algorithms and data structures built with Ruby'
+  s.description = 'Algorithms and data structures built with Ruby'
+  s.authors     = ['Ivan Zinovyev']
   s.email       = 'vanyazin@gmail.com'
   s.files       = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{(:?^(:?test|spec|features)/)|(?:\.gemspec$)})
   end
   s.homepage    = 'https://github.com/zinovyev/ruborithms'
   s.license     = 'MIT'
-  s.add_development_dependency "rspec", "~> 3.5"
+  s.add_development_dependency 'rspec', '~> 3.5'
+  s.add_development_dependency 'rubocop', '~> 0.48.1'
 end

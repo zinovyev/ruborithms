@@ -1,4 +1,4 @@
-module Ruborithms 
+module Ruborithms
   module Algorithms
     module LinearSearch
       class << self

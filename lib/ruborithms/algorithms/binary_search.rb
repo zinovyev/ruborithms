@@ -11,17 +11,15 @@ module Ruborithms
         def binary_search(object, value)
           min = 0
           max = object.count - 1
-          while (max >= min)
+          while max >= min
             avg = ((max + min) / 2).floor
-            if object[avg] == value
-              return avg
-            elsif object[avg] > value
-              max = avg - 1 
+            return avg if object[avg] == value
+            if object[avg] > value
+              max = avg - 1
             else
               min = avg + 1
             end
           end
-          nil
         end
       end
 
