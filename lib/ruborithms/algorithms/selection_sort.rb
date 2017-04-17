@@ -20,12 +20,12 @@ module Ruborithms
 
         def find_index_of_min_value(object, i)
           min_index = i
-          min_value = object[i] 
+          min_value = object[i]
           i.upto(object.count - 1) do |j|
             if object[j] < min_value
               min_index = j
               min_value = object[j]
-            end 
+            end
           end
           min_index
         end
