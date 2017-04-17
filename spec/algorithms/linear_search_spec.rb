@@ -3,8 +3,8 @@ require 'spec_helper'
 describe Ruborithms::Algorithms::LinearSearch do
   class DummyArray < Array; end
 
-  let!(:sample_array) { [-4, 1, 5, 22, 82, 192, 1001] }
-  let!(:empty_array) { [] }
+  let(:sample_array) { [-4, 1, 5, 22, 82, 192, 1001] }
+  let(:empty_array) { [] }
 
   context 'when in a class context' do
     subject { DummyArray.include Ruborithms::Algorithms::LinearSearch }
