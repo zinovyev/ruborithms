@@ -8,8 +8,8 @@ require 'ruborithms/version'
 Gem::Specification.new do |s|
   s.name        = 'ruborithms'
   s.version     = Ruborithms::VERSION
-  s.summary     = 'Algorithms and data structures built with Ruby'
-  s.description = 'Algorithms and data structures built with Ruby'
+  s.summary     = 'Algorithms and data structures implemented in Ruby'
+  s.description = 'Algorithms and data structures implemented in Ruby'
   s.authors     = ['Ivan Zinovyev']
   s.email       = 'vanyazin@gmail.com'
   s.files       = `git ls-files -z`.split("\x0").reject do |f|
