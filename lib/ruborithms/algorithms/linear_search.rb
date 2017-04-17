@@ -9,9 +9,9 @@ module Ruborithms
 
       module ClassMethods
         def linear_search(object, value)
-          object.each_with_index do |item, index|
-            return index if value == item
-          end
+          0.upto(object.count - 1) do |i|
+            return i if value == object[i]
+          end; nil
         end
       end
 
